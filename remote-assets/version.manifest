@@ -1,0 +1,6 @@
+{
+	"packageUrl": "https://localhost:5000/remote-assets",
+	"remoteManifestUrl": "https://localhost:5000/remote-assets/project.manifest",
+	"remoteVersionUrl": "https://localhost:5000/remote-assets/version.manifest",
+	"version": "1.1.0"
+}

@@ -1,0 +1,21 @@
+{
+	"packageUrl": "https://localhost:5000/remote-assets",
+	"remoteManifestUrl": "https://localhost:5000/remote-assets/project.manifest",
+	"remoteVersionUrl": "https://localhost:5000/remote-assets/version.manifest",
+	"version": "1.0.0",
+	"assets": {
+		"src/app.js": {
+			"size": 0,
+			"md5": ""
+		},
+		"res/HelloWorld.png": {
+			"size": 0,
+			"md5": ""
+		},
+		"project.json": {
+			"size": 0,
+			"md5": ""
+		}
+	},
+	"searchPaths": []
+}

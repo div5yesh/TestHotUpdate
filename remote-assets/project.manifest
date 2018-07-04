@@ -1,0 +1,29 @@
+{
+	"packageUrl": "https://localhost:5000/remote-assets",
+	"remoteManifestUrl": "https://localhost:5000/remote-assets/project.manifest",
+	"remoteVersionUrl": "https://localhost:5000/remote-assets/version.manifest",
+	"version": "1.1.0",
+	"assets": {
+		"src/HotUpdateManager.js": {
+			"size": 3977,
+			"md5": "fb3ebb9a39acfee7f53a0ae7ad6b9c77"
+		},
+		"src/animation.js": {
+			"size": 255,
+			"md5": "9ea7b8872b619325b580afe2de97937b"
+		},
+		"src/app.js": {
+			"size": 3134,
+			"md5": "07701ed805f11858bc97bb35d43ac06a"
+		},
+		"res/HelloWorld.png": {
+			"size": 56874,
+			"md5": "e3badece9b5884d55043c8b3bded4ebc"
+		},
+		"project.json": {
+			"size": 371,
+			"md5": "5bc86cde82357da6bd62ca8bd616c289"
+		}
+	},
+	"searchPaths": []
+}
