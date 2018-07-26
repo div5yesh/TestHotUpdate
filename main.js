@@ -61,7 +61,7 @@ if (cc.sys.isNative) {
 }
 
 function HotUpdate() {
-	HotUpdateManager.init("res/Manifests/project.manifest", "Tests/AssetsManagerTest/");
+	HotUpdateManager.init("res/manifests/project.manifest", "Tests/AssetsManagerTest/");
 	HotUpdateManager.update();
 }
 

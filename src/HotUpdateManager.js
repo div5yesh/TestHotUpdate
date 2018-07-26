@@ -15,8 +15,31 @@ var HotUpdateManager = {
 		//set writable storage path to save downloaded assets
 		this.storagePath = ((jsb.fileUtils ? jsb.fileUtils.getWritablePath() : "/") + storagePath);
 
+		this.versionCompareHandle = function (versionA, versionB) {
+            cc.log("JS Custom Version Compare: version A is " + versionA + ', version B is ' + versionB);
+            var vA = versionA.split('.');
+            var vB = versionB.split('.');
+            for (var i = 0; i < vA.length; ++i) {
+                var a = parseInt(vA[i]);
+                var b = parseInt(vB[i] || 0);
+                if (a === b) {
+                    continue;
+                }
+                else {
+                    return a - b;
+                }
+            }
+            if (vB.length > vA.length) {
+                return -1;
+            }
+            else {
+                return 0;
+            }
+		};
+		
 		// create assets manager object
 		this.manager = new jsb.AssetsManager(manifestUrl, this.storagePath);
+		console.log("AssetsManager Init");
 	
 		if (!cc.sys.ENABLE_GC_FOR_NATIVE_OBJECTS) {
 			this.manager.retain();
